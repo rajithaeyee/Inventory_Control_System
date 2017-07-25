@@ -8,15 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OnBarcode.Barcode;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 
 namespace MangalaTextiles
 {
-    public partial class ItemManagement : Form
+    public partial class ItemManagement : MaterialForm
     {
         public ItemManagement()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void ItemManagement_Load(object sender, EventArgs e)
@@ -36,13 +43,31 @@ namespace MangalaTextiles
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string code = (textBox4.Text.GetHashCode() + textBox5.Text.GetHashCode()).ToString().Replace("-", "");
+            
 
-            string FileName = "D:\\" + textBox4.Text + "_" + textBox5.Text + ".jpg";
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            string code = (materialSingleLineTextField3.Text.GetHashCode() + materialSingleLineTextField5.Text.GetHashCode()).ToString().Replace("-", "");
+
+            string FileName = "D:\\" + materialSingleLineTextField3.Text + "_" + materialSingleLineTextField4.Text + ".jpg";
 
             Linear barcode;
 
-            textBox3.Text = code;
+            materialSingleLineTextField2.Text = code;
 
             barcode = new Linear();
             barcode.Type = BarcodeType.CODE11;
@@ -51,17 +76,18 @@ namespace MangalaTextiles
 
             MessageBox.Show("Barcode Generated Successfully!");
 
-            using(var context = new MyContext()){
+            using (var context = new MyContext())
+            {
 
                 var itm = new Item
                 {
                     Bracode = code,
-                    Item_Name = textBox4.Text,
-                    Brand = textBox5.Text,
+                    Item_Name = materialSingleLineTextField3.Text,
+                    Brand = materialSingleLineTextField4.Text,
                     Size = comboBox1.SelectedText,
-                    Quantity = Convert.ToInt32(textBox6.Text),
-                    Net_Price = Convert.ToDouble(textBox7.Text),
-                    Selling_Price = Convert.ToDouble(textBox8.Text),
+                    Quantity = Convert.ToInt32(materialSingleLineTextField5.Text),
+                    Net_Price = Convert.ToDouble(materialSingleLineTextField6.Text),
+                    Selling_Price = Convert.ToDouble(materialSingleLineTextField7.Text),
                     Supplier_ID = Convert.ToInt32(comboBox2.SelectedValue)
                 };
 
@@ -71,27 +97,31 @@ namespace MangalaTextiles
 
                 var it = (from i in context.Items where i.Bracode == code select i);
 
-                foreach(var i in it){
+                foreach (var i in it)
+                {
 
-                    textBox2.Text = i.ItemID.ToString();
-                
+                    materialSingleLineTextField1.Text = i.ItemID.ToString();
+
                 }
 
 
                 MessageBox.Show("Item Saved Successfully");
-            
+
             }
-
-
-
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            int itemid = Convert.ToInt32(textBox2.Text);
 
-            using(var context = new MyContext()){
+        }
+
+        private void materialFlatButton3_Click(object sender, EventArgs e)
+        {
+            int itemid = Convert.ToInt32(materialSingleLineTextField1.Text);
+
+            using (var context = new MyContext())
+            {
 
                 var itm = context.Items.Find(itemid);
 
@@ -101,13 +131,18 @@ namespace MangalaTextiles
 
                 context.SaveChanges();
 
-                MessageBox.Show("Item Deleted Successfully"); 
+                MessageBox.Show("Item Deleted Successfully");
 
             }
         
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void materialSingleLineTextField8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton4_Click(object sender, EventArgs e)
         {
 
         }
