@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,62 +12,49 @@ using System.Windows.Forms;
 
 namespace MangalaTextiles
 {
-    public partial class SupplierManagement : Form
+    public partial class SupplierManagement : MaterialForm
+
     {
         public SupplierManagement()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+        
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SupplierManagement_Load(object sender, EventArgs e)
         {
-            int SupplierID = Convert.ToInt32(textBox1.Text);
 
-            using(var context = new MyContext()){
+        }
 
-                var sup = context.Suppliers.Find(SupplierID);
-
-                textBox2.Text = sup.SuppilerID.ToString();
-
-                textBox3.Text = sup.F_Name;
-
-                textBox4.Text = sup.L_Name;
-
-                textBox5.Text = sup.Email;
-
-                textBox6.Text = sup.Tel_No;
-
-
-            };
-
-
-
-
-            }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void materialFlatButton1_Click(object sender, EventArgs e)
         {
 
 
             using (var context = new MyContext())
             {
+                //Add Supplier
 
                 var supplier = new Supplier()
                 {
-                    F_Name = textBox3.Text,
-                    L_Name = textBox4.Text,
-                    Email = textBox5.Text,
-                    Tel_No = textBox6.Text
+                    F_Name = materialSingleLineTextField2.Text,
+                    L_Name = materialSingleLineTextField3.Text,
+                    Email = materialSingleLineTextField4.Text,
+                    Tel_No = materialSingleLineTextField5.Text
 
                 };
 
                 context.Suppliers.Add(supplier);
                 context.SaveChanges();
-                var sup = (from sp in context.Suppliers where sp.F_Name == textBox3.Text && sp.L_Name == textBox4.Text select sp);
+                var sup = (from sp in context.Suppliers where sp.F_Name == materialSingleLineTextField2.Text && sp.L_Name == materialSingleLineTextField3.Text select sp);
 
-                foreach(var sp in sup){
+                foreach (var sp in sup)
+                {
 
-                    textBox2.Text = sp.SuppilerID.ToString();
+                    materialSingleLineTextField1.Text = sp.SuppilerID.ToString();
 
 
 
@@ -75,25 +64,25 @@ namespace MangalaTextiles
                 MessageBox.Show("Supplier added successfully");
 
 
+            }
+
         }
 
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void materialFlatButton2_Click(object sender, EventArgs e)
         {
             //Update a supplier
 
-            int supplier_ID = Convert.ToInt32(textBox2.Text);
+            int supplier_ID = Convert.ToInt32(materialSingleLineTextField6.Text);
 
-            using(var context = new MyContext()){
+            using (var context = new MyContext())
+            {
 
                 var supplier = context.Suppliers.Find(supplier_ID);
 
-                supplier.F_Name = textBox3.Text;
-                supplier.L_Name = textBox4.Text;
-                supplier.Email = textBox5.Text;
-                supplier.Tel_No = textBox6.Text;
+                supplier.F_Name = materialSingleLineTextField2.Text;
+                supplier.L_Name = materialSingleLineTextField3.Text;
+                supplier.Email = materialSingleLineTextField4.Text;
+                supplier.Tel_No = materialSingleLineTextField5.Text;
 
                 context.SaveChanges();
 
@@ -102,18 +91,16 @@ namespace MangalaTextiles
 
             }
 
-
-
-
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void materialFlatButton3_Click(object sender, EventArgs e)
         {
             //Delete A Supplier
 
-            int supplier_ID = Convert.ToInt32(textBox2.Text);
-            
-            using(var context = new MyContext()){
+            int supplier_ID = Convert.ToInt32(materialSingleLineTextField6.Text);
+
+            using (var context = new MyContext())
+            {
 
 
                 var supplier = context.Suppliers.Find(supplier_ID);
@@ -128,8 +115,28 @@ namespace MangalaTextiles
 
             }
 
+        }
 
+        private void materialFlatButton4_Click(object sender, EventArgs e)
+        {
+            int SupplierID = Convert.ToInt32(materialSingleLineTextField6.Text);
 
+            using (var context = new MyContext())
+            {
+
+                var sup = context.Suppliers.Find(SupplierID);
+
+                materialSingleLineTextField1.Text = sup.SuppilerID.ToString();
+
+                materialSingleLineTextField2.Text = sup.F_Name;
+
+                materialSingleLineTextField3.Text = sup.L_Name;
+
+                materialSingleLineTextField4.Text = sup.Email;
+
+                materialSingleLineTextField5.Text = sup.Tel_No;
+
+            };
 
         }
     }

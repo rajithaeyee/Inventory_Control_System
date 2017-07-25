@@ -21,3 +21,26 @@ D:\C#\MangalaTextiles\MangalaTextiles\obj\Debug\MangalaTextiles.Cart.resources
 D:\C#\MangalaTextiles\MangalaTextiles\obj\Debug\MangalaTextiles.SalesItemAdder.resources
 D:\C#\MangalaTextiles\MangalaTextiles\obj\Debug\MangalaTextiles.FinalSell.resources
 D:\C#\MangalaTextiles\MangalaTextiles\bin\Debug\MaterialSkin.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe.config
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.exe
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.pdb
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.pdb
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MaterialSkin.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\OnBarcode.Barcode.WinForms.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.xml
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.xml
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csprojResolveAssemblyReference.cache
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.AdminPanel.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Cart.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.FinalSell.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Form1.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.ItemManagement.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.OrderManagement.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Properties.Resources.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SalesItemAdder.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SupplierManagement.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.UserManagement.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csproj.GenerateResource.Cache
