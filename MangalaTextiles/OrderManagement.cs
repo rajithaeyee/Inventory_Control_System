@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +14,16 @@ using System.Windows.Forms;
 
 namespace MangalaTextiles
 {
-    public partial class OrderManagement : Form
+    public partial class OrderManagement : MaterialForm
     {
         public OrderManagement()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -26,21 +33,6 @@ namespace MangalaTextiles
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            using (var context = new MyContext())
-            {
-                int ItmID = Convert.ToInt32(comboBox3.SelectedValue);
-                var item = (from itm in context.Items where itm.ItemID == ItmID select itm);
-
-                foreach(var it in item){
-                    this.dataGridView1.Rows.Add(it.ItemID,it.Item_Name, textBox2.Text);
-                }
-
-                
-            }
-
-
-
 
             //MailMessage message = new MailMessage();
             //SmtpClient smtp = new SmtpClient();
@@ -100,60 +92,7 @@ namespace MangalaTextiles
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var context = new MyContext())
-            {
-
-                var order = new Order()
-                {
-
-                    DateAndTime = DateTime.Now,
-                    Cheque_No = textBox3.Text,
-                    Status = "Processing",
-                    SupplierID = Convert.ToInt32(comboBox2.SelectedValue)
-
-                };
-
-                context.Orders.Add(order);
-                context.SaveChanges();
-                var finalOrder = (from ord in context.Orders where ord.Cheque_No == textBox3.Text select ord);
-
-                foreach (var o in finalOrder)
-                {
-
-                    textBox1.Text = o.OrderID.ToString();
-
-                }
-
-                int OrderNumber = Convert.ToInt32(textBox1.Text);
-
-                foreach(DataGridViewRow row in this.dataGridView1.Rows){
-                    int OItemID = Convert.ToInt32(row.Cells[0].Value);
-                    int OItemQuantity = Convert.ToInt32(row.Cells[2].Value);
-
-                 var ordereditem = new OrderedItem(){
-                                      OrderID = OrderNumber,
-                                      Oitem = OItemID,                    
-                                      Quantity = OItemQuantity    
-                                          };
-                 if (ordereditem.Oitem != 0 && ordereditem.Quantity != 0)
-                 {
-
-                        context.OrderedItems.Add(ordereditem);
-                        context.SaveChanges();
-                    
-                    }
-                
-                }
-
-                
-
-                comboBox1.DataSource = context.Orders.ToList();
-                comboBox1.DisplayMember = "DateAndTime";
-                comboBox1.ValueMember = "OrderID";
-                MessageBox.Show("Order Added successfully");
-
-
-            }
+            
 
 
 
@@ -162,50 +101,96 @@ namespace MangalaTextiles
         private void button4_Click(object sender, EventArgs e)
         {
 
-            int orderID = Convert.ToInt32(comboBox1.SelectedValue);
-            this.dataGridView1.Rows.Clear();
-           
-            using (var context = new MyContext()){
-
-                var order = (from o in context.Orders where o.OrderID == orderID select o);
-                var orderitem = (from orditm in context.OrderedItems where orditm.OrderID == orderID select orditm);
-
-                foreach(var x in order){
-
-                    if (x.Status.Equals("Cancelled"))
-                    {
-
-                        this.dataGridView1.Rows.Add("This Order", "Is Already", "Cleared");
-
-                    }
-                    else {
-
-
-                        foreach (var y in orderitem)
-                        {
-
-                            var itm = context.Items.Find(y.Oitem);
-                            this.dataGridView1.Rows.Add(itm.ItemID, itm.Item_Name, y.Quantity);
-                            //MessageBox.Show(itm.Item_Name);
-
-                        }
-                    
-                    
-                    
-                    }
-
-                
-                }
-                
-                
-
-            }
-
 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+
+
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+
+            using (var context = new MyContext())
+            {
+                int ItmID = Convert.ToInt32(comboBox3.SelectedValue);
+                var item = (from itm in context.Items where itm.ItemID == ItmID select itm);
+
+                foreach (var it in item)
+                {
+                    this.dataGridView1.Rows.Add(it.ItemID, it.Item_Name, materialSingleLineTextField2.Text);
+                }
+
+
+            }
+        }
+
+        private void materialFlatButton2_Click(object sender, EventArgs e)
+        {
+            using (var context = new MyContext())
+            {
+
+                var order = new Order()
+                {
+
+                    DateAndTime = DateTime.Now,
+                    Cheque_No = materialSingleLineTextField3.Text,
+                    Status = "Processing",
+                    SupplierID = Convert.ToInt32(comboBox2.SelectedValue)
+
+                };
+
+                context.Orders.Add(order);
+                context.SaveChanges();
+                var finalOrder = (from ord in context.Orders where ord.Cheque_No == materialSingleLineTextField3.Text select ord);
+
+                foreach (var o in finalOrder)
+                {
+
+                    materialSingleLineTextField1.Text = o.OrderID.ToString();
+
+                }
+
+                int OrderNumber = Convert.ToInt32(materialSingleLineTextField1.Text);
+
+                foreach (DataGridViewRow row in this.dataGridView1.Rows)
+                {
+                    int OItemID = Convert.ToInt32(row.Cells[0].Value);
+                    int OItemQuantity = Convert.ToInt32(row.Cells[2].Value);
+
+                    var ordereditem = new OrderedItem()
+                    {
+                        OrderID = OrderNumber,
+                        Oitem = OItemID,
+                        Quantity = OItemQuantity
+                    };
+                    if (ordereditem.Oitem != 0 && ordereditem.Quantity != 0)
+                    {
+
+                        context.OrderedItems.Add(ordereditem);
+                        context.SaveChanges();
+
+                    }
+
+                }
+
+
+
+                comboBox1.DataSource = context.Orders.ToList();
+                comboBox1.DisplayMember = "DateAndTime";
+                comboBox1.ValueMember = "OrderID";
+                MessageBox.Show("Order Added successfully");
+
+
+            }
+        }
+
+        private void materialFlatButton3_Click(object sender, EventArgs e)
         {
             int orderID = Convert.ToInt32(comboBox1.SelectedValue);
 
@@ -217,14 +202,67 @@ namespace MangalaTextiles
                 Order.Status = "Cancelled";
 
                 context.SaveChanges();
-               // MessageBox.Show("Employee {0} Removed From The Database successfully", em.EmployeeID.ToString());
+                // MessageBox.Show("Employee {0} Removed From The Database successfully", em.EmployeeID.ToString());
                 MessageBox.Show("Order Cancelled");
 
             }
 
+        }
+
+        private void materialFlatButton4_Click(object sender, EventArgs e)
+        {
+
+            int orderID = Convert.ToInt32(comboBox1.SelectedValue);
+            this.dataGridView1.Rows.Clear();
+
+            using (var context = new MyContext())
+            {
+
+                var order = (from o in context.Orders where o.OrderID == orderID select o);
+                var orderitem = (from orditm in context.OrderedItems where orditm.OrderID == orderID select orditm);
+
+                foreach (var x in order)
+                {
+
+                    if (x.Status.Equals("Cancelled"))
+                    {
+
+                        this.dataGridView1.Rows.Add("This Order", "Is Already", "Cleared");
+
+                    }
+                    else
+                    {
+
+
+                        foreach (var y in orderitem)
+                        {
+
+                            var itm = context.Items.Find(y.Oitem);
+                            this.dataGridView1.Rows.Add(itm.ItemID, itm.Item_Name, y.Quantity);
+                            //MessageBox.Show(itm.Item_Name);
+
+                        }
 
 
 
+                    }
+
+
+                }
+
+
+
+            }
+
+        }
+
+        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
+        {
+            if(materialSingleLineTextField3.Text.Length!=0){
+
+                materialFlatButton2.Enabled = true;
+            
+            }
         }
     }
 }
