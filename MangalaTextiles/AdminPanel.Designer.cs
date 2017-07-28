@@ -151,6 +151,7 @@
             this.materialFlatButton6.TabIndex = 11;
             this.materialFlatButton6.Text = "Report Generator";
             this.materialFlatButton6.UseVisualStyleBackColor = true;
+            this.materialFlatButton6.Click += new System.EventHandler(this.materialFlatButton6_Click);
             // 
             // materialFlatButton7
             // 

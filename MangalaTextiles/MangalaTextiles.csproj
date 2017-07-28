@@ -50,8 +50,23 @@
     <Reference Include="MaterialSkin">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\..\..\C#libs\pdf\realdlls\GDI+\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\..\..\C#libs\pdf\realdlls\GDI+\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\..\..\C#libs\pdf\realdlls\GDI+\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
     <Reference Include="OnBarcode.Barcode.WinForms">
       <HintPath>E:\C#libs\OnBarcode.Barcode.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\C#libs\pdf\realdlls\GDI+\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\..\..\C#libs\pdf\realdlls\GDI+\PdfSharp.Charting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -110,6 +125,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter.Designer.cs">
+      <DependentUpon>Reporter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sale.cs" />
     <Compile Include="SalesItem.cs" />
     <Compile Include="SalesItemAdder.cs">
@@ -159,6 +180,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reporter.resx">
+      <DependentUpon>Reporter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SalesItemAdder.resx">
       <DependentUpon>SalesItemAdder.cs</DependentUpon>
     </EmbeddedResource>

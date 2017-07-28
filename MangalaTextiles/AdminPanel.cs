@@ -101,6 +101,13 @@ namespace MangalaTextiles
 
         }
 
+        private void materialFlatButton6_Click(object sender, EventArgs e)
+        {
+            Reporter rp = new Reporter();
+            rp.Show();
+
+        }
+
 
 
     }

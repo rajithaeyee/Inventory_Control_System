@@ -44,3 +44,13 @@ E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\Mang
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SupplierManagement.resources
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.UserManagement.resources
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csproj.GenerateResource.Cache
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Reporter.resources
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.DocumentObjectModel.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.Rendering.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.RtfRendering.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\PdfSharp.Charting.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\PdfSharp.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.DocumentObjectModel.resources.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.Rendering.resources.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
+E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\PdfSharp.resources.dll
