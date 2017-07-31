@@ -121,6 +121,7 @@ namespace MangalaTextiles
 
                     foreach (var si in salesitem) {
 
+
                         var itm = context.Items.Find(si.Sitem);
                         string itmName = itm.Item_Name;
                         int quantity = si.Quantity;
