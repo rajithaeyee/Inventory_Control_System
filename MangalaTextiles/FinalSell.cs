@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MangalaTextiles
 {
-    public partial class FinalSell : Form
+    public partial class FinalSell : MaterialForm
     {
         private double Total;
         private double Balance=0.0;
@@ -18,11 +20,21 @@ namespace MangalaTextiles
         public FinalSell()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         public FinalSell(double Total) {
 
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
             this.Total = Total;
         
         }
@@ -30,28 +42,52 @@ namespace MangalaTextiles
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+
         }
 
         private void FinalSell_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Total.ToString();
-            label2.Text = "RS. 0.00";
+            materialSingleLineTextField1.Text = Total.ToString();
+            materialLabel2.Text = "RS. 0.00";
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            double temp = Convert.ToDouble(textBox2.Text);
-            Balance = Total - temp;
+
+
+        }
+
+        private void materialSingleLineTextField2_TextChanged(object sender, EventArgs e)
+        {
+
+
+            double n;
+            bool isNumeric = double.TryParse(materialSingleLineTextField2.Text, out n);
+
+            if(isNumeric){
+            
+                
+            double temp = Convert.ToDouble(materialSingleLineTextField2.Text);
+            Balance = temp - Total;
             if (Balance >= 0)
             {
 
-                label2.Text = "RS. "+Balance.ToString();
+                materialLabel2.Text = "RS. " + Balance.ToString();
 
             }
 
+            
+            }
 
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }
