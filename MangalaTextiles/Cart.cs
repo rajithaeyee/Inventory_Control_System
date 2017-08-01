@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,112 +12,139 @@ using System.Windows.Forms;
 
 namespace MangalaTextiles
 {
-    public partial class Cart : Form
+    public partial class Cart : MaterialForm
     {
         double Total = 0;   
         public Cart()
         {
             InitializeComponent();
-
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string Barcode="";
-            int itemID=-1;
-            string ItemName="";
-            string ItemSize = "";
-            double price = 0;
-            
-            if (true)
-            {
 
-                using (var context = new MyContext())
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialSingleLineTextField1_TextChanged(object sender, EventArgs e)
+        {
+
+
+            int n;
+            bool isNumeric = int.TryParse(materialSingleLineTextField1.Text, out n);
+
+
+            if(isNumeric){
+
+                string Barcode = "";
+                int itemID = -1;
+                string ItemName = "";
+                string ItemSize = "";
+                double price = 0;
+
+                if (true)
                 {
 
-                  var itm = (from i in context.Items where i.Bracode == textBox1.Text select i);
-
-                    foreach (var i in itm)
+                    using (var context = new MyContext())
                     {
-                        Barcode = textBox1.Text;
-                        itemID = i.ItemID;
-                        ItemName = i.Item_Name;
-                        ItemSize = i.Size;
-                        price = i.Selling_Price;
+
+                        var itm = (from i in context.Items where i.Bracode == materialSingleLineTextField1.Text select i);
+
+                        foreach (var i in itm)
+                        {
+                            Barcode = materialSingleLineTextField1.Text;
+                            itemID = i.ItemID;
+                            ItemName = i.Item_Name;
+                            ItemSize = i.Size;
+                            price = i.Selling_Price;
+                        }
+
+
+
+                    }
+
+
+
+
+                    using (SalesItemAdder SIA = new SalesItemAdder(Barcode, itemID, ItemName))
+                    {
+
+
+
+                        if (SIA.ShowDialog() == DialogResult.OK)
+                        {
+
+                            dataGridView1.Rows.Add(itemID.ToString(), Barcode, ItemName, ItemSize, price.ToString(), SIA.Quantity);
+
+                            Total = Total + (price * Convert.ToInt32(SIA.Quantity));
+                             materialLabel2.Text = Total.ToString();
+
+                        }
+
+
+
+
                     }
 
 
 
                 }
-
-
-
-
-                using (SalesItemAdder SIA = new SalesItemAdder(Barcode,itemID,ItemName))
+                else
                 {
 
-                 
-
-                    if (SIA.ShowDialog() == DialogResult.OK)
-                    {
-
-                        dataGridView1.Rows.Add(itemID.ToString(), Barcode, ItemName, ItemSize, price.ToString(),SIA.Quantity);
-
-                        Total = Total + (price * Convert.ToInt32(SIA.Quantity));
-                        label2.Text = Total.ToString();
-
-                    }
 
 
 
-                
-                } 
-
-
-
-            }
-            else { 
+                }
             
             
-
-
+            
+            
             }
 
+            
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void materialFlatButton1_Click(object sender, EventArgs e)
         {
             using (FinalSell FS = new FinalSell(Total))
             {
 
-                if (FS.ShowDialog() == DialogResult.OK) {
+                if (FS.ShowDialog() == DialogResult.OK)
+                {
 
-                using(var context = new MyContext()){
-
-
-                    var sale = new Sale()
+                    using (var context = new MyContext())
                     {
 
-                        DateTime = DateTime.Now,
-                        Amount = Total
+
+                        var sale = new Sale()
+                        {
+
+                            DateTime = DateTime.Now,
+                            Amount = Total
 
 
 
-                    };
+                        };
 
-                    context.Sales.Add(sale);
-                 
-                    context.SaveChanges();
-                    int finalSell = context.Sales.Max(s => s.SaleID);
-                   // var finalSell = //(from sells in context.Sales where sells.DateTime == sale.DateTime select sells);
+                        context.Sales.Add(sale);
 
-                   // int saleID=-1;
+                        context.SaveChanges();
+                        int finalSell = context.Sales.Max(s => s.SaleID);
+                        // var finalSell = //(from sells in context.Sales where sells.DateTime == sale.DateTime select sells);
 
-                    //foreach(var s in finalSell){
-                    int saleID = finalSell;
-                    //int saleID = finalSell.SaleID;
+                        // int saleID=-1;
+
+                        //foreach(var s in finalSell){
+                        int saleID = finalSell;
+                        //int saleID = finalSell.SaleID;
 
 
                         foreach (DataGridViewRow row in this.dataGridView1.Rows)
@@ -145,25 +174,24 @@ namespace MangalaTextiles
 
 
                         }
-                    
-                    //}
+
+                        //}
 
 
-                
+
+
+
+                    }
+
 
 
                 }
-    
 
-                
-                }
 
-            
-            
+
             }
 
-
-
         }
+
     }
 }
