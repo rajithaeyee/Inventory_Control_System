@@ -47,6 +47,7 @@ namespace MangalaTextiles
                 string ItemName = "";
                 string ItemSize = "";
                 double price = 0;
+                int Quantity = 0;
 
                 if (true)
                 {
@@ -62,7 +63,9 @@ namespace MangalaTextiles
                             itemID = i.ItemID;
                             ItemName = i.Item_Name;
                             ItemSize = i.Size;
+                            Quantity = i.Quantity;
                             price = i.Selling_Price;
+                            
                         }
 
 
@@ -72,7 +75,7 @@ namespace MangalaTextiles
 
 
 
-                    using (SalesItemAdder SIA = new SalesItemAdder(Barcode, itemID, ItemName))
+                    using (SalesItemAdder SIA = new SalesItemAdder(Barcode, itemID, ItemName, Quantity))
                     {
 
 
