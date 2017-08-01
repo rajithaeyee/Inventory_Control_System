@@ -70,8 +70,8 @@ namespace MangalaTextiles
                 {
 
                     AdminPanel ap = new AdminPanel();
-                    ap.Show();
-                    this.Visible = false;
+                    ap.ShowDialog();
+                    //this.Visible = false;
 
                     // this.Dispose();
 
