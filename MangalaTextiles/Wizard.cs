@@ -36,10 +36,19 @@ namespace MangalaTextiles
             using (var context = new MyContext())
             {
 
+                //Stock Chart
+                var items = context.Items.ToList();
 
-                //System.Collections.ArrayList SalesItemsArrayList = new System.Collections.ArrayList();
+                foreach (var it in items)
+                {
+
+                    chart3.Series[0].Points.AddXY(it.Item_Name, it.Quantity);
+                    chart4.Series[0].Points.AddXY(it.Item_Name, it.Quantity);
+
+                }
 
 
+                //Sales Chart
                 var filteredSales = context.Sales.Where(t => t.DateTime >= startDate && t.DateTime <= endDate);
 
                 foreach (var fs in filteredSales)
@@ -74,6 +83,7 @@ namespace MangalaTextiles
 
 
                 }
+
 
 
             }
