@@ -162,5 +162,10 @@ namespace MangalaTextiles
 
 
         }
+
+        private void Reporter_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

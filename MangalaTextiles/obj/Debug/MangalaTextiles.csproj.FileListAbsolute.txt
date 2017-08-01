@@ -54,3 +54,37 @@ E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\M
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.Rendering.resources.dll
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
 E:\Working Directory GIT\Inventory_Control_System\MangalaTextiles\bin\Debug\de\PdfSharp.resources.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe.config
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.exe
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.pdb
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.pdb
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MaterialSkin.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.DocumentObjectModel.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.Rendering.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\MigraDoc.RtfRendering.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\OnBarcode.Barcode.WinForms.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\PdfSharp.Charting.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\PdfSharp.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.xml
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.xml
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.DocumentObjectModel.resources.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.Rendering.resources.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\bin\Debug\de\PdfSharp.resources.dll
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csprojResolveAssemblyReference.cache
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.AdminPanel.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Cart.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.FinalSell.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Form1.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.ItemManagement.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.OrderManagement.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Properties.Resources.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Reporter.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SalesItemAdder.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SupplierManagement.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.UserManagement.resources
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csproj.GenerateResource.Cache
+E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Wizard.resources

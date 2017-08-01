@@ -108,6 +108,12 @@ namespace MangalaTextiles
 
         }
 
+        private void materialFlatButton7_Click(object sender, EventArgs e)
+        {
+            Wizard wiz = new Wizard();
+            wiz.Show();
+        }
+
 
 
     }

@@ -167,6 +167,7 @@
             this.materialFlatButton7.TabIndex = 12;
             this.materialFlatButton7.Text = "Wizard";
             this.materialFlatButton7.UseVisualStyleBackColor = true;
+            this.materialFlatButton7.Click += new System.EventHandler(this.materialFlatButton7_Click);
             // 
             // AdminPanel
             // 
