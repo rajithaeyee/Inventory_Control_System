@@ -108,14 +108,14 @@ namespace MangalaTextiles
                     context.Sales.Add(sale);
                  
                     context.SaveChanges();
-
-                    var finalSell = (from sells in context.Sales where sells.DateTime == sale.DateTime select sells);
+                    int finalSell = context.Sales.Max(s => s.SaleID);
+                   // var finalSell = //(from sells in context.Sales where sells.DateTime == sale.DateTime select sells);
 
                    // int saleID=-1;
 
-                    foreach(var s in finalSell){
-
-                       int saleID = s.SaleID;
+                    //foreach(var s in finalSell){
+                    int saleID = finalSell;
+                    //int saleID = finalSell.SaleID;
 
 
                         foreach (DataGridViewRow row in this.dataGridView1.Rows)
@@ -138,18 +138,18 @@ namespace MangalaTextiles
                                 context.SaleItems.Add(salesItem);
                                 context.SaveChanges();
 
+                                MessageBox.Show("Done");
+
+
                             }
 
 
                         }
                     
-                    }
+                    //}
 
 
                 
-                    MessageBox.Show("Done");
-
-
 
 
                 }
