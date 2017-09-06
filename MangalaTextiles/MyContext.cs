@@ -12,10 +12,10 @@ namespace MangalaTextiles
     {
        //Uncomment this constructor when you change the db structure to start the db from initial state
 
-        //public MyContext()
-        //{
-        //    Database.SetInitializer<MyContext>(new DropCreateDatabaseAlways<MyContext>());
-        //}
+        public MyContext()
+        {
+            Database.SetInitializer<MyContext>(new DropCreateDatabaseAlways<MyContext>());
+        }
 
 
        public virtual DbSet<Employee> Employees { get; set; }

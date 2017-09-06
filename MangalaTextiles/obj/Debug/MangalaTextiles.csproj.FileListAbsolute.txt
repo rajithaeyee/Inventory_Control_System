@@ -88,3 +88,31 @@ E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Supplie
 E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.UserManagement.resources
 E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csproj.GenerateResource.Cache
 E:\WD\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Wizard.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe.config
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.exe
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.pdb
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.exe
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\MangalaTextiles.pdb
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\MaterialSkin.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.xml
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.DocumentObjectModel.resources.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.Rendering.resources.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csprojResolveAssemblyReference.cache
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.AdminPanel.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Cart.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.FinalSell.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Form1.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.ItemManagement.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.OrderManagement.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Properties.Resources.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Reporter.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SalesItemAdder.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.SupplierManagement.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.UserManagement.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.Wizard.resources
+C:\Users\kmdtkonara\Desktop\2nd Year\Inventory_Control_System\MangalaTextiles\obj\Debug\MangalaTextiles.csproj.GenerateResource.Cache

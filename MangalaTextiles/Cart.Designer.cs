@@ -55,9 +55,9 @@
             this.Column6,
             this.Column3,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 64);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(623, 165);
+            this.dataGridView1.Size = new System.Drawing.Size(636, 165);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -158,7 +158,7 @@
             this.materialFlatButton2.AutoSize = true;
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(248, 296);
+            this.materialFlatButton2.Location = new System.Drawing.Point(260, 297);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";

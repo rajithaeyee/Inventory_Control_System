@@ -19,7 +19,7 @@ namespace MangalaTextiles
         public Form1()
         {
             InitializeComponent();
-
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -30,7 +30,11 @@ namespace MangalaTextiles
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Location = new Point(0,0);
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            //materialSingleLineTextField1.BackColor = Color.Transparent; 
 
+            
         }
 
 
@@ -40,19 +44,19 @@ namespace MangalaTextiles
             using (var context = new MyContext())
             {
 
-                //var E = new Employee
-                //{
+                var E = new Employee
+                {
 
-                //    F_Name = "Rajitha",
-                //    L_Name = "Abeyrathna",
-                //    User_Name = "Rajitha",
-                //    User_Password = "123",
-                //    User_Type = "Admin"
+                  F_Name = "Rajitha",
+                   L_Name = "Abeyrathna",
+                   User_Name = "Rajitha",
+                  User_Password = "123",
+                    User_Type = "Admin"
 
-                //};
+                };
 
-                //context.Employees.Add(E);
-                //context.SaveChanges();
+                context.Employees.Add(E);
+                context.SaveChanges();
 
                 // MessageBox.Show("User Added");
 
@@ -96,12 +100,29 @@ namespace MangalaTextiles
         {
             materialSingleLineTextField1.Text = "";
             
+            
         }
 
         private void materialSingleLineTextField2_Click(object sender, EventArgs e)
         {
             materialSingleLineTextField2.Text = "";
             materialSingleLineTextField2.PasswordChar = '*';
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

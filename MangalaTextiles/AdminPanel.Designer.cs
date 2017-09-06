@@ -36,15 +36,15 @@
             this.materialFlatButton5 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton6 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton7 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackBtn
             // 
-            this.BackBtn.AutoSize = true;
             this.BackBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackBtn.Depth = 0;
-            this.BackBtn.Location = new System.Drawing.Point(23, 70);
+            this.BackBtn.Location = new System.Drawing.Point(13, 79);
             this.BackBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BackBtn.MaximumSize = new System.Drawing.Size(48, 48);
             this.BackBtn.MinimumSize = new System.Drawing.Size(48, 48);
@@ -59,7 +59,6 @@
             // 
             // materialFlatButton1
             // 
-            this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
             this.materialFlatButton1.Location = new System.Drawing.Point(13, 200);
@@ -75,10 +74,9 @@
             // 
             // materialFlatButton2
             // 
-            this.materialFlatButton2.AutoSize = true;
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(174, 200);
+            this.materialFlatButton2.Location = new System.Drawing.Point(177, 200);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";
@@ -91,7 +89,6 @@
             // 
             // materialFlatButton3
             // 
-            this.materialFlatButton3.AutoSize = true;
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
             this.materialFlatButton3.Location = new System.Drawing.Point(372, 200);
@@ -107,10 +104,9 @@
             // 
             // materialFlatButton4
             // 
-            this.materialFlatButton4.AutoSize = true;
             this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton4.Depth = 0;
-            this.materialFlatButton4.Location = new System.Drawing.Point(536, 200);
+            this.materialFlatButton4.Location = new System.Drawing.Point(527, 241);
             this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton4.Name = "materialFlatButton4";
@@ -123,10 +119,9 @@
             // 
             // materialFlatButton5
             // 
-            this.materialFlatButton5.AutoSize = true;
             this.materialFlatButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton5.Depth = 0;
-            this.materialFlatButton5.Location = new System.Drawing.Point(13, 271);
+            this.materialFlatButton5.Location = new System.Drawing.Point(6, 292);
             this.materialFlatButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton5.Name = "materialFlatButton5";
@@ -139,15 +134,14 @@
             // 
             // materialFlatButton6
             // 
-            this.materialFlatButton6.AutoSize = true;
             this.materialFlatButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton6.Depth = 0;
-            this.materialFlatButton6.Location = new System.Drawing.Point(196, 271);
+            this.materialFlatButton6.Location = new System.Drawing.Point(177, 292);
             this.materialFlatButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton6.Name = "materialFlatButton6";
             this.materialFlatButton6.Primary = false;
-            this.materialFlatButton6.Size = new System.Drawing.Size(146, 36);
+            this.materialFlatButton6.Size = new System.Drawing.Size(173, 36);
             this.materialFlatButton6.TabIndex = 11;
             this.materialFlatButton6.Text = "Report Generator";
             this.materialFlatButton6.UseVisualStyleBackColor = true;
@@ -155,25 +149,32 @@
             // 
             // materialFlatButton7
             // 
-            this.materialFlatButton7.AutoSize = true;
             this.materialFlatButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton7.Depth = 0;
-            this.materialFlatButton7.Location = new System.Drawing.Point(372, 271);
+            this.materialFlatButton7.Location = new System.Drawing.Point(372, 292);
             this.materialFlatButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton7.Name = "materialFlatButton7";
             this.materialFlatButton7.Primary = false;
-            this.materialFlatButton7.Size = new System.Drawing.Size(63, 36);
+            this.materialFlatButton7.Size = new System.Drawing.Size(142, 36);
             this.materialFlatButton7.TabIndex = 12;
             this.materialFlatButton7.Text = "Wizard";
             this.materialFlatButton7.UseVisualStyleBackColor = true;
             this.materialFlatButton7.Click += new System.EventHandler(this.materialFlatButton7_Click);
             // 
+            // label1
+            // 
+            this.label1.Image = global::MangalaTextiles.Properties.Resources.Back_Ground3;
+            this.label1.Location = new System.Drawing.Point(-6, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(704, 348);
+            this.label1.TabIndex = 13;
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 422);
+            this.ClientSize = new System.Drawing.Size(694, 397);
             this.Controls.Add(this.materialFlatButton7);
             this.Controls.Add(this.materialFlatButton6);
             this.Controls.Add(this.materialFlatButton5);
@@ -182,11 +183,11 @@
             this.Controls.Add(this.materialFlatButton2);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.BackBtn);
+            this.Controls.Add(this.label1);
             this.Name = "AdminPanel";
             this.Text = "AdminPanel";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -200,5 +201,6 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton5;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton6;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton7;
+        private System.Windows.Forms.Label label1;
     }
 }
