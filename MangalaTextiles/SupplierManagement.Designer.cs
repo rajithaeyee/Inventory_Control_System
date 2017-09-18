@@ -38,6 +38,8 @@
             this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialSingleLineTextField6 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // materialSingleLineTextField1
@@ -71,6 +73,7 @@
             this.materialSingleLineTextField2.TabIndex = 11;
             this.materialSingleLineTextField2.Text = "FIRST NAME";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.Click += new System.EventHandler(this.materialSingleLineTextField2_Click);
             // 
             // materialSingleLineTextField3
             // 
@@ -87,6 +90,7 @@
             this.materialSingleLineTextField3.TabIndex = 12;
             this.materialSingleLineTextField3.Text = "LAST NAME";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField3.Click += new System.EventHandler(this.materialSingleLineTextField3_Click);
             // 
             // materialSingleLineTextField4
             // 
@@ -103,6 +107,7 @@
             this.materialSingleLineTextField4.TabIndex = 13;
             this.materialSingleLineTextField4.Text = "EMAIL";
             this.materialSingleLineTextField4.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField4.Click += new System.EventHandler(this.materialSingleLineTextField4_Click);
             // 
             // materialSingleLineTextField5
             // 
@@ -119,13 +124,15 @@
             this.materialSingleLineTextField5.TabIndex = 14;
             this.materialSingleLineTextField5.Text = "TELEPHONE";
             this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField5.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
+            this.materialSingleLineTextField5.TextChanged += new System.EventHandler(this.materialSingleLineTextField5_TextChanged);
             // 
             // materialFlatButton1
             // 
             this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(353, 328);
+            this.materialFlatButton1.Location = new System.Drawing.Point(360, 328);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
@@ -183,6 +190,7 @@
             this.materialSingleLineTextField6.TabIndex = 18;
             this.materialSingleLineTextField6.Text = "SUPPLIER ID";
             this.materialSingleLineTextField6.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField6.Click += new System.EventHandler(this.materialSingleLineTextField6_Click);
             // 
             // materialFlatButton4
             // 
@@ -202,11 +210,41 @@
             this.materialFlatButton4.UseVisualStyleBackColor = true;
             this.materialFlatButton4.Click += new System.EventHandler(this.materialFlatButton4_Click);
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(338, 247);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(243, 19);
+            this.materialLabel1.TabIndex = 20;
+            this.materialLabel1.Text = "*Please enter a valid email address";
+            this.materialLabel1.Visible = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(338, 283);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(244, 19);
+            this.materialLabel2.TabIndex = 21;
+            this.materialLabel2.Text = "*Please enter a valid phone number";
+            this.materialLabel2.Visible = false;
+            // 
             // SupplierManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 391);
+            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialFlatButton4);
             this.Controls.Add(this.materialSingleLineTextField6);
             this.Controls.Add(this.materialFlatButton3);
@@ -237,5 +275,7 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField6;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }

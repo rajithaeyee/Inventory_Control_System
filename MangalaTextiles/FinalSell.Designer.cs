@@ -50,6 +50,7 @@
             this.materialSingleLineTextField1.TabIndex = 6;
             this.materialSingleLineTextField1.Text = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField1.Click += new System.EventHandler(this.materialSingleLineTextField1_Click);
             // 
             // materialSingleLineTextField2
             // 
@@ -66,6 +67,7 @@
             this.materialSingleLineTextField2.TabIndex = 7;
             this.materialSingleLineTextField2.Text = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.Click += new System.EventHandler(this.materialSingleLineTextField2_Click);
             this.materialSingleLineTextField2.TextChanged += new System.EventHandler(this.materialSingleLineTextField2_TextChanged);
             // 
             // materialFlatButton1
@@ -106,9 +108,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(103, 156);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(57, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(37, 19);
             this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Lable 2";
+            this.materialLabel2.Text = "0.00";
             // 
             // FinalSell
             // 

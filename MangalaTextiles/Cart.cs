@@ -196,5 +196,10 @@ namespace MangalaTextiles
 
         }
 
+        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField1.Text = "";
+        }
+
     }
 }

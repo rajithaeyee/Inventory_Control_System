@@ -89,5 +89,15 @@ namespace MangalaTextiles
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField1.Text = "";
+        }
+
+        private void materialSingleLineTextField2_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField2.Text = "";
+        }
     }
 }

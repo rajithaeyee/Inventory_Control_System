@@ -188,5 +188,34 @@ namespace MangalaTextiles
             }
 
         }
+
+        private void materialSingleLineTextField6_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Text = "";
+
+        }
+
+        private void materialSingleLineTextField2_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField2.Text = "";
+        }
+
+        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField3.Text = "";
+
+        }
+
+        private void materialSingleLineTextField4_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField4.Text = "";
+
+        }
+
+        private void materialSingleLineTextField5_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField5.Text = "";
+            materialSingleLineTextField5.PasswordChar = '*';
+        }
     }
 }

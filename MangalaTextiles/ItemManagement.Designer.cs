@@ -42,6 +42,9 @@
             this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialSingleLineTextField8 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -101,6 +104,7 @@
             this.materialSingleLineTextField2.TabIndex = 15;
             this.materialSingleLineTextField2.Text = "BARCODE";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.Click += new System.EventHandler(this.materialSingleLineTextField2_Click);
             // 
             // materialSingleLineTextField3
             // 
@@ -117,6 +121,7 @@
             this.materialSingleLineTextField3.TabIndex = 16;
             this.materialSingleLineTextField3.Text = "ITEM NAME";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField3.Click += new System.EventHandler(this.materialSingleLineTextField3_Click);
             // 
             // materialSingleLineTextField4
             // 
@@ -133,6 +138,7 @@
             this.materialSingleLineTextField4.TabIndex = 17;
             this.materialSingleLineTextField4.Text = "BRAND";
             this.materialSingleLineTextField4.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField4.Click += new System.EventHandler(this.materialSingleLineTextField4_Click);
             // 
             // materialSingleLineTextField5
             // 
@@ -149,6 +155,8 @@
             this.materialSingleLineTextField5.TabIndex = 18;
             this.materialSingleLineTextField5.Text = "QANTITY";
             this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField5.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
+            this.materialSingleLineTextField5.TextChanged += new System.EventHandler(this.materialSingleLineTextField5_TextChanged);
             // 
             // materialSingleLineTextField6
             // 
@@ -165,6 +173,8 @@
             this.materialSingleLineTextField6.TabIndex = 19;
             this.materialSingleLineTextField6.Text = "NET PRICE";
             this.materialSingleLineTextField6.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField6.Click += new System.EventHandler(this.materialSingleLineTextField6_Click);
+            this.materialSingleLineTextField6.TextChanged += new System.EventHandler(this.materialSingleLineTextField6_TextChanged);
             // 
             // materialSingleLineTextField7
             // 
@@ -181,6 +191,8 @@
             this.materialSingleLineTextField7.TabIndex = 20;
             this.materialSingleLineTextField7.Text = "SELLING PRICE";
             this.materialSingleLineTextField7.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField7.Click += new System.EventHandler(this.materialSingleLineTextField7_Click);
+            this.materialSingleLineTextField7.TextChanged += new System.EventHandler(this.materialSingleLineTextField7_TextChanged);
             // 
             // materialFlatButton1
             // 
@@ -264,11 +276,56 @@
             this.materialFlatButton4.UseVisualStyleBackColor = true;
             this.materialFlatButton4.Click += new System.EventHandler(this.materialFlatButton4_Click);
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(381, 315);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(117, 19);
+            this.materialLabel1.TabIndex = 26;
+            this.materialLabel1.Text = "*Invalid Quantity";
+            this.materialLabel1.Visible = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(381, 358);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(128, 19);
+            this.materialLabel2.TabIndex = 27;
+            this.materialLabel2.Text = "*Invalid Net Price ";
+            this.materialLabel2.Visible = false;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(381, 396);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(149, 19);
+            this.materialLabel3.TabIndex = 28;
+            this.materialLabel3.Text = "*Invalid Selling Price ";
+            this.materialLabel3.Visible = false;
+            // 
             // ItemManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 543);
+            this.Controls.Add(this.materialLabel3);
+            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSingleLineTextField8);
             this.Controls.Add(this.materialFlatButton4);
             this.Controls.Add(this.materialFlatButton3);
@@ -307,5 +364,8 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField8;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
     }
 }

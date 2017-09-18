@@ -139,12 +139,96 @@ namespace MangalaTextiles
 
         private void materialSingleLineTextField8_Click(object sender, EventArgs e)
         {
-
+            materialSingleLineTextField8.Text = "";
         }
 
         private void materialFlatButton4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void materialSingleLineTextField2_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField2.Text = "";
+
+        }
+
+        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField3.Text = "";
+
+        }
+
+        private void materialSingleLineTextField4_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField4.Text = "";
+        }
+
+        private void materialSingleLineTextField5_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField5.Text = "";
+        }
+
+        private void materialSingleLineTextField6_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Text = "";
+        }
+
+        private void materialSingleLineTextField7_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField7.Text = "";
+        }
+
+        private void materialSingleLineTextField5_TextChanged(object sender, EventArgs e)
+        {
+            try {
+
+                Convert.ToInt32(materialSingleLineTextField5.Text);
+                materialLabel1.Visible = false;
+                materialFlatButton1.Enabled = true;
+            
+            }catch(Exception){
+
+                materialLabel1.Visible = true;
+                materialFlatButton1.Enabled = false;
+            }
+        }
+
+        private void materialSingleLineTextField6_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Convert.ToDouble(materialSingleLineTextField6.Text);
+                materialLabel2.Visible = false;
+                materialFlatButton1.Enabled = true;
+
+            }
+            catch (Exception)
+            {
+
+                materialLabel2.Visible = true;
+                materialFlatButton1.Enabled = false;
+            }
+
+        }
+
+        private void materialSingleLineTextField7_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Convert.ToDouble(materialSingleLineTextField7.Text);
+                materialLabel3.Visible = false;
+                materialFlatButton1.Enabled = true;
+
+            }
+            catch (Exception)
+            {
+
+                materialLabel3.Visible = true;
+                materialFlatButton1.Enabled = false;
+            }
         }
     }
 }

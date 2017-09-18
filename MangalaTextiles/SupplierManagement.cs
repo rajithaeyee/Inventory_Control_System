@@ -6,7 +6,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -137,6 +139,64 @@ namespace MangalaTextiles
                 materialSingleLineTextField5.Text = sup.Tel_No;
 
             };
+
+        }
+
+        private void materialSingleLineTextField6_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Text = "";
+        }
+
+        private void materialSingleLineTextField2_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField2.Text = "";
+
+        }
+
+        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField3.Text = "";
+
+        }
+
+        private void materialSingleLineTextField4_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField4.Text = "";
+
+        }
+
+        private void materialSingleLineTextField5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(materialSingleLineTextField4.Text);
+                materialLabel1.Visible = false;
+                materialFlatButton1.Enabled = true;
+                
+            }
+            catch (Exception)
+            {
+                materialLabel1.Visible = true;
+                materialFlatButton1.Enabled = false;
+            }
+
+            materialSingleLineTextField5.Text = "";
+
+        }
+
+        private void materialSingleLineTextField5_TextChanged(object sender, EventArgs e)
+        {
+            Regex rgx = new Regex("^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$");
+            if (rgx.IsMatch(materialSingleLineTextField5.Text))
+            {
+                materialLabel2.Visible = false;
+                materialFlatButton1.Enabled = true;
+            }
+            else {
+
+                materialLabel2.Visible = true;
+                materialFlatButton1.Enabled = false;
+            }
 
         }
     }

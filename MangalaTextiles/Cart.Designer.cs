@@ -109,6 +109,7 @@
             this.materialSingleLineTextField1.TabIndex = 6;
             this.materialSingleLineTextField1.Text = "BARCODE";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField1.Click += new System.EventHandler(this.materialSingleLineTextField1_Click);
             this.materialSingleLineTextField1.TextChanged += new System.EventHandler(this.materialSingleLineTextField1_TextChanged);
             // 
             // materialLabel1

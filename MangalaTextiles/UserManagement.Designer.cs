@@ -121,6 +121,7 @@
             this.materialSingleLineTextField2.TabIndex = 22;
             this.materialSingleLineTextField2.Text = "FIRST NAME";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.Click += new System.EventHandler(this.materialSingleLineTextField2_Click);
             // 
             // materialSingleLineTextField3
             // 
@@ -137,6 +138,7 @@
             this.materialSingleLineTextField3.TabIndex = 23;
             this.materialSingleLineTextField3.Text = "LAST NAME";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField3.Click += new System.EventHandler(this.materialSingleLineTextField3_Click);
             // 
             // materialSingleLineTextField4
             // 
@@ -153,6 +155,7 @@
             this.materialSingleLineTextField4.TabIndex = 24;
             this.materialSingleLineTextField4.Text = "USERNAME";
             this.materialSingleLineTextField4.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField4.Click += new System.EventHandler(this.materialSingleLineTextField4_Click);
             // 
             // materialSingleLineTextField5
             // 
@@ -169,6 +172,7 @@
             this.materialSingleLineTextField5.TabIndex = 25;
             this.materialSingleLineTextField5.Text = "PASSWORD";
             this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField5.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
             // 
             // materialLabel1
             // 
@@ -198,6 +202,7 @@
             this.materialSingleLineTextField6.TabIndex = 27;
             this.materialSingleLineTextField6.Text = "USER ID";
             this.materialSingleLineTextField6.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField6.Click += new System.EventHandler(this.materialSingleLineTextField6_Click);
             // 
             // materialFlatButton1
             // 
