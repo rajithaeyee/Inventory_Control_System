@@ -199,5 +199,19 @@ namespace MangalaTextiles
             }
 
         }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SupplierManagement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            this.Visible = false;
+            AdminPanel aP = new AdminPanel();
+            aP.ShowDialog();
+            this.Dispose();
+        }
     }
 }

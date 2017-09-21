@@ -53,7 +53,7 @@
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(124, 23);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(429, 23);
             this.materialSingleLineTextField1.TabIndex = 10;
             this.materialSingleLineTextField1.Text = "SUPPLIER ID";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -69,7 +69,7 @@
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(124, 23);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(429, 23);
             this.materialSingleLineTextField2.TabIndex = 11;
             this.materialSingleLineTextField2.Text = "FIRST NAME";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -86,7 +86,7 @@
             this.materialSingleLineTextField3.SelectedText = "";
             this.materialSingleLineTextField3.SelectionLength = 0;
             this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(124, 23);
+            this.materialSingleLineTextField3.Size = new System.Drawing.Size(429, 23);
             this.materialSingleLineTextField3.TabIndex = 12;
             this.materialSingleLineTextField3.Text = "LAST NAME";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
@@ -96,14 +96,14 @@
             // 
             this.materialSingleLineTextField4.Depth = 0;
             this.materialSingleLineTextField4.Hint = "";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(209, 243);
+            this.materialSingleLineTextField4.Location = new System.Drawing.Point(209, 265);
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
             this.materialSingleLineTextField4.PasswordChar = '\0';
             this.materialSingleLineTextField4.SelectedText = "";
             this.materialSingleLineTextField4.SelectionLength = 0;
             this.materialSingleLineTextField4.SelectionStart = 0;
-            this.materialSingleLineTextField4.Size = new System.Drawing.Size(124, 23);
+            this.materialSingleLineTextField4.Size = new System.Drawing.Size(429, 23);
             this.materialSingleLineTextField4.TabIndex = 13;
             this.materialSingleLineTextField4.Text = "EMAIL";
             this.materialSingleLineTextField4.UseSystemPasswordChar = false;
@@ -113,14 +113,14 @@
             // 
             this.materialSingleLineTextField5.Depth = 0;
             this.materialSingleLineTextField5.Hint = "";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(209, 283);
+            this.materialSingleLineTextField5.Location = new System.Drawing.Point(209, 330);
             this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
             this.materialSingleLineTextField5.PasswordChar = '\0';
             this.materialSingleLineTextField5.SelectedText = "";
             this.materialSingleLineTextField5.SelectionLength = 0;
             this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(124, 23);
+            this.materialSingleLineTextField5.Size = new System.Drawing.Size(429, 23);
             this.materialSingleLineTextField5.TabIndex = 14;
             this.materialSingleLineTextField5.Text = "TELEPHONE";
             this.materialSingleLineTextField5.UseSystemPasswordChar = false;
@@ -132,7 +132,7 @@
             this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(360, 328);
+            this.materialFlatButton1.Location = new System.Drawing.Point(311, 389);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
@@ -148,7 +148,7 @@
             this.materialFlatButton2.AutoSize = true;
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(419, 328);
+            this.materialFlatButton2.Location = new System.Drawing.Point(365, 389);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";
@@ -164,7 +164,7 @@
             this.materialFlatButton3.AutoSize = true;
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Location = new System.Drawing.Point(491, 328);
+            this.materialFlatButton3.Location = new System.Drawing.Point(437, 389);
             this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton3.Name = "materialFlatButton3";
@@ -216,13 +216,14 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(338, 247);
+            this.materialLabel1.Location = new System.Drawing.Point(206, 243);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(243, 19);
             this.materialLabel1.TabIndex = 20;
             this.materialLabel1.Text = "*Please enter a valid email address";
             this.materialLabel1.Visible = false;
+            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // materialLabel2
             // 
@@ -230,7 +231,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(338, 283);
+            this.materialLabel2.Location = new System.Drawing.Point(205, 308);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(244, 19);
@@ -242,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 391);
+            this.ClientSize = new System.Drawing.Size(856, 509);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialFlatButton4);
@@ -255,8 +256,11 @@
             this.Controls.Add(this.materialSingleLineTextField3);
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
+            this.MaximumSize = new System.Drawing.Size(933, 509);
+            this.MinimumSize = new System.Drawing.Size(856, 509);
             this.Name = "SupplierManagement";
             this.Text = "SupplierManagement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SupplierManagement_FormClosing);
             this.Load += new System.EventHandler(this.SupplierManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

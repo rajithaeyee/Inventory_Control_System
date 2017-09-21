@@ -14,6 +14,7 @@ namespace MangalaTextiles
 {
     public partial class UserManagement : MaterialForm
     {
+         
         public UserManagement()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace MangalaTextiles
         }
 
 
-
+        
         private void materialRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -216,6 +217,15 @@ namespace MangalaTextiles
         {
             materialSingleLineTextField5.Text = "";
             materialSingleLineTextField5.PasswordChar = '*';
+        }
+
+        private void UserManagement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            this.Visible = false;
+            AdminPanel aP = new AdminPanel();
+            aP.ShowDialog();
+            this.Dispose();
         }
     }
 }

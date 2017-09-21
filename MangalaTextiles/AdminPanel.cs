@@ -56,62 +56,79 @@ namespace MangalaTextiles
 
         private void AdminPanel_Load(object sender, EventArgs e)
         {
+            materialFlatButton1.Image = Image.FromFile("C:\\Users\\kmdtkonara\\Downloads\\group1.png");
+            // Align the image and text on the button.
+            materialFlatButton1.ImageAlign = ContentAlignment.MiddleRight;
+            materialFlatButton1.TextAlign = ContentAlignment.MiddleLeft;
+            
+
+
 
         }
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            Form1 backLogin = new Form1();
-            backLogin.Show();
+            this.Visible = false;
+            Form1 Form1 = new Form1();
+            Form1.ShowDialog();
          
         }
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
             UserManagement um = new UserManagement();
-
-            um.Show();
+            this.Visible = false;
+            um.ShowDialog();
         }
 
         private void materialFlatButton2_Click(object sender, EventArgs e)
         {
             SupplierManagement sm = new SupplierManagement();
-
-            sm.Show();
+            this.Visible = false;
+            sm.ShowDialog();
         }
 
         private void materialFlatButton3_Click(object sender, EventArgs e)
         {
             ItemManagement im = new ItemManagement();
-
-            im.Show();
+            this.Visible = false;
+            im.ShowDialog();
         }
 
         private void materialFlatButton4_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             OrderManagement om = new OrderManagement();
-            om.Show();
+            om.ShowDialog();
 
         }
 
         private void materialFlatButton5_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Cart cart = new Cart();
-            cart.Show();
+            cart.ShowDialog();
 
         }
 
         private void materialFlatButton6_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Reporter rp = new Reporter();
-            rp.Show();
+            rp.ShowDialog();
 
         }
 
         private void materialFlatButton7_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Wizard wiz = new Wizard();
-            wiz.Show();
+            wiz.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
 

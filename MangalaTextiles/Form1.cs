@@ -24,6 +24,8 @@ namespace MangalaTextiles
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(500, 500);
         }
 
   
@@ -72,9 +74,13 @@ namespace MangalaTextiles
                 }
                 else
                 {
-
+                    
+                    this.Visible = false;
                     AdminPanel ap = new AdminPanel();
                     ap.ShowDialog();
+
+                    this.Dispose();
+                    //Console.Write("xxxxx");
                     //this.Visible = false;
 
                     // this.Dispose();

@@ -48,10 +48,10 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(164, 350);
+            this.materialDivider1.Location = new System.Drawing.Point(169, 323);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(233, 102);
+            this.materialDivider1.Size = new System.Drawing.Size(503, 102);
             this.materialDivider1.TabIndex = 17;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -60,7 +60,7 @@
             this.materialRadioButton1.AutoSize = true;
             this.materialRadioButton1.Depth = 0;
             this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton1.Location = new System.Drawing.Point(169, 369);
+            this.materialRadioButton1.Location = new System.Drawing.Point(169, 340);
             this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -77,7 +77,7 @@
             this.materialRadioButton2.AutoSize = true;
             this.materialRadioButton2.Depth = 0;
             this.materialRadioButton2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton2.Location = new System.Drawing.Point(169, 411);
+            this.materialRadioButton2.Location = new System.Drawing.Point(169, 382);
             this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -94,14 +94,14 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(164, 116);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(169, 89);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(195, 23);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(503, 23);
             this.materialSingleLineTextField1.TabIndex = 21;
             this.materialSingleLineTextField1.Text = "USER ID";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -110,14 +110,14 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(164, 149);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(169, 127);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(195, 23);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(503, 23);
             this.materialSingleLineTextField2.TabIndex = 22;
             this.materialSingleLineTextField2.Text = "FIRST NAME";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -127,14 +127,14 @@
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(164, 194);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(169, 167);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
             this.materialSingleLineTextField3.SelectedText = "";
             this.materialSingleLineTextField3.SelectionLength = 0;
             this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(195, 23);
+            this.materialSingleLineTextField3.Size = new System.Drawing.Size(503, 23);
             this.materialSingleLineTextField3.TabIndex = 23;
             this.materialSingleLineTextField3.Text = "LAST NAME";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
@@ -144,14 +144,14 @@
             // 
             this.materialSingleLineTextField4.Depth = 0;
             this.materialSingleLineTextField4.Hint = "";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(164, 235);
+            this.materialSingleLineTextField4.Location = new System.Drawing.Point(169, 208);
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
             this.materialSingleLineTextField4.PasswordChar = '\0';
             this.materialSingleLineTextField4.SelectedText = "";
             this.materialSingleLineTextField4.SelectionLength = 0;
             this.materialSingleLineTextField4.SelectionStart = 0;
-            this.materialSingleLineTextField4.Size = new System.Drawing.Size(195, 23);
+            this.materialSingleLineTextField4.Size = new System.Drawing.Size(503, 23);
             this.materialSingleLineTextField4.TabIndex = 24;
             this.materialSingleLineTextField4.Text = "USERNAME";
             this.materialSingleLineTextField4.UseSystemPasswordChar = false;
@@ -161,14 +161,14 @@
             // 
             this.materialSingleLineTextField5.Depth = 0;
             this.materialSingleLineTextField5.Hint = "";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(164, 278);
+            this.materialSingleLineTextField5.Location = new System.Drawing.Point(169, 251);
             this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
             this.materialSingleLineTextField5.PasswordChar = '\0';
             this.materialSingleLineTextField5.SelectedText = "";
             this.materialSingleLineTextField5.SelectionLength = 0;
             this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(195, 23);
+            this.materialSingleLineTextField5.Size = new System.Drawing.Size(503, 23);
             this.materialSingleLineTextField5.TabIndex = 25;
             this.materialSingleLineTextField5.Text = "PASSWORD";
             this.materialSingleLineTextField5.UseSystemPasswordChar = false;
@@ -180,7 +180,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(166, 328);
+            this.materialLabel1.Location = new System.Drawing.Point(171, 301);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(86, 19);
@@ -226,7 +226,7 @@
             this.materialFlatButton2.AutoSize = true;
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(211, 511);
+            this.materialFlatButton2.Location = new System.Drawing.Point(309, 456);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MaximumSize = new System.Drawing.Size(64, 36);
             this.materialFlatButton2.MinimumSize = new System.Drawing.Size(64, 36);
@@ -244,7 +244,7 @@
             this.materialFlatButton3.AutoSize = true;
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Location = new System.Drawing.Point(281, 511);
+            this.materialFlatButton3.Location = new System.Drawing.Point(379, 456);
             this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton3.MaximumSize = new System.Drawing.Size(64, 36);
             this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -261,7 +261,7 @@
             this.materialFlatButton4.AutoSize = true;
             this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton4.Depth = 0;
-            this.materialFlatButton4.Location = new System.Drawing.Point(353, 511);
+            this.materialFlatButton4.Location = new System.Drawing.Point(451, 456);
             this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton4.Name = "materialFlatButton4";
@@ -276,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 571);
+            this.ClientSize = new System.Drawing.Size(856, 509);
             this.Controls.Add(this.materialFlatButton4);
             this.Controls.Add(this.materialFlatButton3);
             this.Controls.Add(this.materialFlatButton2);
@@ -291,8 +291,11 @@
             this.Controls.Add(this.materialRadioButton2);
             this.Controls.Add(this.materialRadioButton1);
             this.Controls.Add(this.materialDivider1);
+            this.MaximumSize = new System.Drawing.Size(933, 509);
+            this.MinimumSize = new System.Drawing.Size(856, 509);
             this.Name = "UserManagement";
             this.Text = "UserManagement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserManagement_FormClosing);
             this.Load += new System.EventHandler(this.UserManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

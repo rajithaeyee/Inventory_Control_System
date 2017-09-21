@@ -201,5 +201,19 @@ namespace MangalaTextiles
             materialSingleLineTextField1.Text = "";
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Cart_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            this.Visible = false;
+            AdminPanel aP = new AdminPanel();
+            aP.ShowDialog();
+            this.Dispose();
+        }
+
     }
 }

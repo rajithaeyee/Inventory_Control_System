@@ -46,11 +46,11 @@
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(40, 127);
+            this.materialTabControl1.Location = new System.Drawing.Point(41, 127);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(499, 312);
+            this.materialTabControl1.Size = new System.Drawing.Size(756, 312);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -59,7 +59,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(491, 286);
+            this.tabPage1.Size = new System.Drawing.Size(748, 286);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventory Report";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(491, 286);
+            this.tabPage2.Size = new System.Drawing.Size(748, 286);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sales Report";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             this.materialTabSelector1.Location = new System.Drawing.Point(40, 79);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(499, 39);
+            this.materialTabSelector1.Size = new System.Drawing.Size(756, 39);
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
@@ -140,11 +140,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 464);
+            this.ClientSize = new System.Drawing.Size(856, 509);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
+            this.MaximumSize = new System.Drawing.Size(933, 509);
+            this.MinimumSize = new System.Drawing.Size(856, 509);
             this.Name = "Reporter";
             this.Text = "Reporter";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Reporter_FormClosing);
             this.Load += new System.EventHandler(this.Reporter_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

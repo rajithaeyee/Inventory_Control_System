@@ -57,9 +57,9 @@
             // 
             this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(188, 153);
+            this.comboBox2.Location = new System.Drawing.Point(131, 153);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.Size = new System.Drawing.Size(157, 21);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -67,9 +67,9 @@
             // 
             this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(188, 192);
+            this.comboBox3.Location = new System.Drawing.Point(131, 192);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 21);
+            this.comboBox3.Size = new System.Drawing.Size(157, 21);
             this.comboBox3.TabIndex = 6;
             // 
             // dataGridView1
@@ -81,7 +81,7 @@
             this.Quantity});
             this.dataGridView1.Location = new System.Drawing.Point(343, 129);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(337, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(386, 174);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -95,6 +95,7 @@
             // 
             this.Item.HeaderText = "Item Name";
             this.Item.Name = "Item";
+            this.Item.Width = 140;
             // 
             // Quantity
             // 
@@ -105,14 +106,14 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(188, 115);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(131, 115);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(100, 23);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(157, 23);
             this.materialSingleLineTextField1.TabIndex = 11;
             this.materialSingleLineTextField1.Text = "ORDER ID";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -121,14 +122,14 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(188, 224);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(131, 224);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(100, 23);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(157, 23);
             this.materialSingleLineTextField2.TabIndex = 12;
             this.materialSingleLineTextField2.Text = "QUANTITY";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -153,14 +154,14 @@
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(188, 308);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(131, 308);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
             this.materialSingleLineTextField3.SelectedText = "";
             this.materialSingleLineTextField3.SelectionLength = 0;
             this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(100, 23);
+            this.materialSingleLineTextField3.Size = new System.Drawing.Size(157, 23);
             this.materialSingleLineTextField3.TabIndex = 14;
             this.materialSingleLineTextField3.Text = "CHEQUE NO";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
@@ -172,7 +173,7 @@
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
             this.materialFlatButton2.Enabled = false;
-            this.materialFlatButton2.Location = new System.Drawing.Point(383, 342);
+            this.materialFlatButton2.Location = new System.Drawing.Point(305, 382);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";
@@ -188,7 +189,7 @@
             this.materialFlatButton3.AutoSize = true;
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Location = new System.Drawing.Point(497, 342);
+            this.materialFlatButton3.Location = new System.Drawing.Point(419, 382);
             this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton3.Name = "materialFlatButton3";
@@ -221,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 407);
+            this.ClientSize = new System.Drawing.Size(856, 509);
             this.Controls.Add(this.materialFlatButton4);
             this.Controls.Add(this.materialFlatButton3);
             this.Controls.Add(this.materialFlatButton2);
@@ -233,8 +234,11 @@
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
+            this.MaximumSize = new System.Drawing.Size(933, 509);
+            this.MinimumSize = new System.Drawing.Size(856, 509);
             this.Name = "OrderManagement";
             this.Text = "OrderManagement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderManagement_FormClosing);
             this.Load += new System.EventHandler(this.OrderManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -248,9 +252,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
@@ -258,5 +259,8 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }
