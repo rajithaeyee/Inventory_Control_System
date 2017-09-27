@@ -170,13 +170,15 @@ namespace MangalaTextiles
                                 context.SaleItems.Add(salesItem);
                                 context.SaveChanges();
 
-                                MessageBox.Show("Done");
+                               
 
 
                             }
 
 
                         }
+
+                        MessageBox.Show("Sale Added Successfully");
 
                         //}
 
@@ -209,10 +211,10 @@ namespace MangalaTextiles
         private void Cart_FormClosing(object sender, FormClosingEventArgs e)
         {
 
-            this.Visible = false;
-            AdminPanel aP = new AdminPanel();
-            aP.ShowDialog();
-            this.Dispose();
+            //this.Visible = false;
+            //AdminPanel aP = new AdminPanel();
+            //aP.ShowDialog();
+            //this.Dispose();
         }
 
     }

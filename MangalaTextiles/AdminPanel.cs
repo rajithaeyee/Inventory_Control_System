@@ -105,7 +105,7 @@ namespace MangalaTextiles
 
         private void materialFlatButton5_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            //this.Visible = false;
             Cart cart = new Cart();
             cart.ShowDialog();
 

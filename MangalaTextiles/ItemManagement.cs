@@ -144,6 +144,30 @@ namespace MangalaTextiles
 
         private void materialFlatButton4_Click(object sender, EventArgs e)
         {
+            // Search An Item
+
+            int ItemID = Convert.ToInt32(materialSingleLineTextField8.Text);
+
+            using (var context = new MyContext())
+            {
+
+
+                var item = context.Items.Find(ItemID);
+
+                materialSingleLineTextField1.Text = item.ItemID.ToString();
+                materialSingleLineTextField2.Text = item.Bracode;
+                materialSingleLineTextField3.Text = item.Item_Name;
+                materialSingleLineTextField4.Text = item.Brand;
+                materialSingleLineTextField5.Text = item.Quantity.ToString();
+                materialSingleLineTextField6.Text = item.Net_Price.ToString();
+                materialSingleLineTextField7.Text = item.Selling_Price.ToString();
+                comboBox1.SelectedItem = item.Size;
+                comboBox2.SelectedItem = item.Supplier;
+
+            }
+
+
+
 
         }
 
